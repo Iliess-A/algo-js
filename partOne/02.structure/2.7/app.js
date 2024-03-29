@@ -1,13 +1,14 @@
-let nb = 5;
- nb+=3;
- console.log("5 +3 vaux " + nb + "!");
+(()=>{
 
- nb -= 5;
- console.log("la reponse -5 vaux " + nb + "!");
+    let n=parseInt(window.prompt('choisissez un nombre ?'));
 
- nb*=3;
- console.log("la reponse *3 vaux " + nb + "!");
- nb/=2;
- console.log("la reponse /2 vaux " + nb + "!");
- nb%2;
- console.log("la reponse modulo 2 vaux " + nb + "!");
+    let nt=0;
+
+    for(i=1;i<=n;i++){
+        let nb=parseInt(window.prompt('choisissez un nombre ?'));
+
+        nt +=nb;
+    }
+    console.log(nt);
+
+})();

@@ -1,13 +1,14 @@
-let nb = 5;
- nb+=3;
- console.log("5 +3 vaux " + nb + "!");
+(() => {
+    let min=parseInt(window.prompt('donner un chiffre qui sera le minimum'));
+    let max=parseInt(window.prompt('donner un chiffre qui sera le maximum'));
+    let current=parseInt(window.prompt('donner un chiffre qui sera le current'));
 
- nb -= 5;
- console.log("la reponse -5 vaux " + nb + "!");
+    if (min >= max){
+        console.log('vous ne comprenez pas les consigne.');
+    } else{
+        if (current>=min && current<=max){
+            console.log('vous etes entre min et max')
+        }
+    }
 
- nb*=3;
- console.log("la reponse *3 vaux " + nb + "!");
- nb/=2;
- console.log("la reponse /2 vaux " + nb + "!");
- nb%2;
- console.log("la reponse modulo 2 vaux " + nb + "!");
+})();

@@ -1,13 +1,31 @@
-let nb = 5;
- nb+=3;
- console.log("5 +3 vaux " + nb + "!");
+(()=>{
 
- nb -= 5;
- console.log("la reponse -5 vaux " + nb + "!");
+    let nb_user=parseInt(window.prompt('choisissez un nombre entre 1-7 ?'));
 
- nb*=3;
- console.log("la reponse *3 vaux " + nb + "!");
- nb/=2;
- console.log("la reponse /2 vaux " + nb + "!");
- nb%2;
- console.log("la reponse modulo 2 vaux " + nb + "!");
+    switch(nb_user) {
+        case 1 :
+            console.log('lundi');
+            break;
+        case 2 :
+            console.log('mardi');
+            break;
+        case 3 :
+            console.log('mercredi');
+            break;
+        case 4 :
+            console.log('jeudi');
+            break;
+        case 5 :
+            console.log('vendredi');
+            break;
+        case 6 :
+            console.log('samedi');
+            break;
+        case 7 :
+            console.log('dimanche');
+            break;
+        default :
+            console.log(`votre chiffre n'est pas entre 1 et 7 `) 
+    }
+
+})();
