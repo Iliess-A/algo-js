@@ -1,6 +1,6 @@
 (() => {
     
-     class Rectangle{
+    class Rectangle{
         constructor(topLeftXpos,topLeftYpos,width,length){
 
             this.topLeftXpos=topLeftXpos;
@@ -17,9 +17,19 @@
         }
      }
 
-     let rect1=new Rectangle(8,5,5,8);
-     let rect2=new Rectangle(6,10,10,10);
+     let allRectangle=[];
 
-     console.log(rect1.collides(rect2));
 
+
+     let randomR=()=>{
+       return Math.floor(Math.random());
+     }
+
+     for(i=0;i<=1000;i++){
+
+        allRectangle.push(new Rectangle[randomR,randomR,randomR,randomR]);
+
+     }
+    
+     console.log(allRectangle());
 })();
